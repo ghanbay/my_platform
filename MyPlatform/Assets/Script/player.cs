@@ -5,12 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
-{
-    
+{    
     public Animator anim;
     bool kosuyor_mu=false;
-    int scor = 0;
-    
+    int scor = 0;    
     [SerializeField]
     float speed=10;
     [SerializeField]
@@ -30,8 +28,6 @@ public class player : MonoBehaviour
     GameObject baslangic_panel;
     [SerializeField]
     AudioSource coin_ses;
-
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -56,14 +52,6 @@ public class player : MonoBehaviour
             baslangic_panel.SetActive(false);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
-
     private void FixedUpdate()
     {
         if (oyun_basladi_mi==false)
@@ -76,7 +64,7 @@ public class player : MonoBehaviour
         turn_move(horizontal);     
         
     }
-    //yürüme kodu
+    //yurume kodu
     void move(float horizontal)
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
@@ -107,8 +95,7 @@ public class player : MonoBehaviour
         }
     }
 
-    //çarpma iþlemleri
-   
+    //carpma islemleri   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("coin"))
@@ -161,7 +148,6 @@ public class player : MonoBehaviour
     }
     void death()
     {
-        //transform.position = new Vector3(transform.position.x - 0.8f, transform.position.y, transform.position.z);
         transform.Rotate(new Vector3(0, 0, 90));
         Destroy(this.gameObject);
         yeniden_oyna_panel.SetActive(true);
