@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - coin
+  - Enemy
+  - Death
+  - star
+  - kapi
+  - son_kapi
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - zeminler
+  - coin
+  - Enemy
+  - chest
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: backgrand
+    uniqueID: 4161088955
+    locked: 0
+  - name: grass
+    uniqueID: 1801607715
+    locked: 0
+  - name: coin
+    uniqueID: 3009456073
+    locked: 0
+  - name: enemy
+    uniqueID: 3983794615
+    locked: 0
+  - name: player
+    uniqueID: 684695583
+    locked: 0
+  - name: chest
+    uniqueID: 4225425865
+    locked: 0
+  - name: superStar
+    uniqueID: 3803625589
+    locked: 0
+  - name: kapi
+    uniqueID: 901811627
+    locked: 0
